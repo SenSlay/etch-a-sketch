@@ -4,21 +4,21 @@
     border: 0;
 }
 
-.container {
+.grid {
     display: flex;
     flex-direction: column;
+    height: 800px;
+    width: 800px;
+    margin: auto;
 }
 
 .row {
     display: flex;
-    flex-direction: row;
+    flex: 1;
 }
 
 .box {
-    padding: 2rem;
+    flex: 1;
     border: 1px solid rgb(67, 60, 60);
 }
 
-.box:hover {
-    background-color: grey;
-}
