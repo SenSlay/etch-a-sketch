@@ -1,5 +1,20 @@
 const container = document.querySelector(".container");
 const grid = document.querySelector(".grid");
+const sizeSldier = document.getElementById("grid-size-slider");
+
+// Change dimensions of grid based on user input
+sizeSldier.addEventListener("input", () => {
+  document.getElementById("grid-size").innerHTML = sizeSldier.value + "x" + sizeSldier.value; 
+  
+  // Delete existing grid
+  grid.innerHTML = "";
+
+  // Create new grid with new size
+  createGrid(sizeSldier.value);
+
+  // Give new grid boxes color function
+  boxColorFunction();
+});
 
 // Create grid 
 function createGrid(gridSize = 50) {
