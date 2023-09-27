@@ -20,8 +20,10 @@ body {
 }
 
 .main {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     padding: 20px 50px;
+    justify-content: center;
 }
 
 .footer {
@@ -31,6 +33,56 @@ body {
     margin-top: auto;
     padding: 20px 0px;
     gap: 5px;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.control-btn {
+    height: 50px;
+    width: 200px;
+    cursor: pointer;
+    border-radius: 7px;
+    font-size: medium;
+    background-color: white;
+    border: 1px solid grey;
+}
+
+input[name="control-btn"] {
+    display: none;
+}
+
+.radio-btn {
+    font-size: medium;
+    display: flex;
+    height: 50px;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 7px;
+    background-color: white;
+    border: 1px solid grey;
+}
+
+input[name="control-btn"]:checked + .radio-btn {
+    background-color: #7EB2DD;
+}
+
+#color-picker {
+    height: 100px;
+    width: 100px;
+}
+
+.slider {
+    width: 200px;
+    cursor: pointer;
 }
 
 .grid {

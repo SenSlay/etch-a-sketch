@@ -14,6 +14,13 @@
 
     <div class="main">
         <div class="controls">
+            <input type="color" name="color-picker" id="color-picker" value="#f27a18">
+            <input type="radio" name="control-btn" id="color" checked><label for="color" class="radio-btn">Color mode</label>
+            <input type="radio" name="control-btn" id="rainbow"><label for="rainbow" class="radio-btn">Rainbow mode</label>
+            <input type="radio" name="control-btn" id="eraser"><label for="eraser" class="radio-btn">Eraser</label>
+            <button type="button" class="control-btn" id="clear"><label for="clear">Clear</label></button>
+            <p id="grid-size">50x50</p>
+            <input type="range" min="1" max="100" value="50" class="slider" id="grid-size-slider">
         </div>
 
         <div class="grid">
