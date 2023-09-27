@@ -83,5 +83,17 @@ function checkBrushType() {
   };
 };
 
+const clearBtn = document.getElementById("clear");
+
+// Clear grid of color
+function clearCanvas() {
+  const boxes = document.querySelectorAll(".box");
+  boxes.forEach((box) => {
+    box.style.backgroundColor = "white";
+  });
+};
+
+clearBtn.addEventListener('click', clearCanvas);
+
 createGrid();
 boxColorFunction();
