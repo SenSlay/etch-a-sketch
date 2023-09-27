@@ -21,7 +21,16 @@ body {
 
 .main {
     display: flex;
-    padding: 50px;
+    padding: 20px 50px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    padding: 20px 0px;
+    gap: 5px;
 }
 
 .grid {
