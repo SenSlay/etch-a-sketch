@@ -1,5 +1,5 @@
 # Etch-a-Sketch
 
-A web version of Etch-a-Sketch built using HTML, CSS, and JS for a project for The Odin Project.
+A project of The Odin Project to practice DOM manipulation.
 
 [Live Demo](https://senslay.github.io/TOP-etch-a-sketch/) 👈
